@@ -1,12 +1,12 @@
  
-** COMPREHENSIVE TEST PLAN: SECURE TODO APPLICATION **
+**COMPREHENSIVE TEST PLAN: SECURE TODO APPLICATION**
  
 
 This document outlines the comprehensive test plan and strategy for the Secure Todo Application, encompassing both the backend API and frontend End-to-End (E2E) automation testing. The primary objective is to ensure the overall quality, functionality, and reliability of the application by validating its components at different layers.
 
 
  
-** SECTION 1: PROJECT STRUCTURE OVERVIEW**
+**SECTION 1: PROJECT STRUCTURE OVERVIEW**
  
 
 Your project is organized into a main root directory containing three sub-directories, each responsible for a different part of the application and its testing:
@@ -18,7 +18,7 @@ Your project is organized into a main root directory containing three sub-direct
 
 
  
-** SECTION 2: TESTING SCOPE**
+**SECTION 2: TESTING SCOPE**
  
 
 The testing strategy covers two primary layers: Backend API Testing and Frontend E2E Testing.
@@ -70,7 +70,7 @@ The testing strategy covers two primary layers: Backend API Testing and Frontend
 
 
  
-** SECTION 3: TEST COVERAGE AREAS**
+**SECTION 3: TEST COVERAGE AREAS**
  
 
     * FUNCTIONAL COVERAGE: All core user stories and API functionalities are covered with both positive and negative test cases.
@@ -85,7 +85,7 @@ The testing strategy covers two primary layers: Backend API Testing and Frontend
 
 
  
-** SECTION 4: TOOLS USED AND WHY**
+**SECTION 4: TOOLS USED AND WHY**
  
 
     TOOL: Jest
@@ -122,7 +122,7 @@ The testing strategy covers two primary layers: Backend API Testing and Frontend
 
 
  
-** SECTION 5: HOW TO RUN THE TESTS**
+**SECTION 5: HOW TO RUN THE TESTS**
  
 
 --- SUB-HEADING: Prerequisites ---
@@ -158,7 +158,7 @@ The testing strategy covers two primary layers: Backend API Testing and Frontend
 
 
  
-** SECTION 6: ASSUMPTIONS AND LIMITATIONS**
+**SECTION 6: ASSUMPTIONS AND LIMITATIONS**
  
 
 --- SUB-HEADING: Assumptions ---
