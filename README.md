@@ -1,5 +1,5 @@
  
-** COMPREHENSIVE TEST PLAN: SECURE TODO APPLICATION**
+** COMPREHENSIVE TEST PLAN: SECURE TODO APPLICATION **
  
 
 This document outlines the comprehensive test plan and strategy for the Secure Todo Application, encompassing both the backend API and frontend End-to-End (E2E) automation testing. The primary objective is to ensure the overall quality, functionality, and reliability of the application by validating its components at different layers.
