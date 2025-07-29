@@ -1,0 +1,21 @@
+{
+    "name": "selenium-e2e-tests",
+    "version": "1.0.0",
+    "description": "Selenium E2E tests for Todo App",
+    "main": "todo_tests.js",
+    "scripts": {
+        "test:e2e": "mocha todo_tests.js --reporter mochawesome --require mochawesome/register",
+        "generate-e2e-report": "npx mochawesome-merge mochawesome-report/*.json > mochawesome-report/merged-report.json && npx marge mochawesome-report/merged-report.json --reportDir mochawesome-report --reportFilename combined-e2e-report"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "mocha": "^10.0.0",
+        "selenium-webdriver": "^4.0.0",
+        "chai": "^4.3.0",
+        "mochawesome": "^7.1.3",
+        "mochawesome-report-generator": "^6.2.0",
+        "mochawesome-merge": "^4.3.0"
+    }
+}
