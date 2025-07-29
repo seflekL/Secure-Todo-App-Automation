@@ -1,4 +1,4 @@
-Comprehensive Test Plan: Secure Todo Application
+omprehensive Test Plan: Secure Todo Application
 
 This document outlines the comprehensive test plan and strategy for the Secure Todo Application, encompassing both the backend API and frontend End-to-End (E2E) automation testing. The primary objective is to ensure the overall quality, functionality, and reliability of the application by validating its components at different layers.
 
@@ -17,6 +17,8 @@ your-main-project-folder/
 ├── todo-api-backend/           (Contains the Node.js Express backend API and its API tests)
 
 └── selenium-e2e-tests/         (Contains the Selenium E2E tests)
+
+
 
 
 
@@ -254,17 +256,29 @@ Why: An elegant and interactive HTML reporter specifically for Mocha. It produce
 
 
 
-Percy.io (for Visual Regression Testing - E2E):
-
-
-
-Why: A cloud-based visual review platform that integrates with existing E2E tests (like Selenium WebDriver) to capture UI snapshots and automatically detect visual regressions across different browsers and responsive states. This ensures that UI changes do not unintentionally alter the application's appearance, providing a critical layer of visual quality assurance.
-
-
-
 5\. How to Run the Tests
 
 To execute the full suite of automated tests, both the frontend and backend applications need to be running. Browser drivers (like ChromeDriver) must also be properly configured.
+
+
+
+Project Structure Overview:
+
+
+
+Your project structure is assumed to be as follows, with a main root directory containing three sub-directories:
+
+
+
+your-main-project-folder/
+
+├── secure-todo-app-frontend/   (Contains the React frontend application)
+
+├── todo-api-backend/           (Contains the Node.js Express backend API and its API tests)
+
+└── selenium-e2e-tests/         (Contains the Selenium E2E tests)
+
+
 
 
 
@@ -336,7 +350,7 @@ Ensure ChromeDriver (or the appropriate WebDriver for your target browser) is in
 
 
 
-Execution Steps (Run in new terminal sessions, after prerequisites are met):
+Execution Steps (Run in new terminal sessions):
 
 
 
@@ -376,7 +390,7 @@ A code coverage report (coverage/lcov-report/index.html) will be generated in to
 
 
 
-Run Frontend E2E Tests (with Visual Snapshots):
+Run Frontend E2E Tests:
 
 
 
@@ -388,11 +402,7 @@ cd your-main-project-folder/selenium-e2e-tests
 
 
 
-Ensure your Percy Token is set as an environment variable (PERCY\_TOKEN=pk\_live\_xxxxxx).
-
-
-
-Execute the E2E tests (Mocha/Selenium/Percy):
+Execute the E2E tests (Mocha/Selenium):
 
 
 
@@ -400,23 +410,15 @@ npm run test:e2e
 
 
 
-(For local runs without Percy upload, you can use npm run test:e2e:local if configured)
-
-
-
 Viewing Reports:
 
 
 
-Terminal will show a summary and a Percy build URL.
+Terminal will show a summary.
 
 
 
 A detailed HTML report (mochawesome-report/mochawesome.html) will be generated in selenium-e2e-tests/mochawesome-report.
-
-
-
-Access the Percy.io dashboard using the provided URL in the terminal to review visual snapshots and detect regressions.
 
 
 
@@ -440,7 +442,7 @@ The backend includes a /reset-todos endpoint, crucial for test data isolation an
 
 
 
-Operating system environment variables (e.g., PATH for ChromeDriver, PERCY\_TOKEN) are correctly configured.
+Operating system environment variables (e.g., PATH for ChromeDriver) are correctly configured.
 
 
 
@@ -459,6 +461,10 @@ Performance Load Testing: These tests focus on functional correctness, not concu
 
 
 Accessibility Testing: Dedicated automated accessibility audits are not integrated into the current E2E test suite.
+
+
+
+Visual Regression Testing: The tests do not include tools for visual comparison to detect unintended UI layout or styling changes.
 
 
 
