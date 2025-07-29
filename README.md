@@ -1,4 +1,4 @@
-omprehensive Test Plan: Secure Todo Application
+Comprehensive Test Plan: Secure Todo Application
 
 This document outlines the comprehensive test plan and strategy for the Secure Todo Application, encompassing both the backend API and frontend End-to-End (E2E) automation testing. The primary objective is to ensure the overall quality, functionality, and reliability of the application by validating its components at different layers.
 
@@ -20,8 +20,6 @@ your-main-project-folder/
 
 
 
-
-
 2\. Testing Scope
 
 The testing strategy covers two primary layers:
@@ -35,8 +33,6 @@ Focuses on validating the functionality, reliability, and performance of the Nod
 
 
 Key areas tested:
-
-
 
 User Authentication:
 
@@ -101,8 +97,6 @@ Simulates real user interactions within the React-based frontend application to 
 
 
 Key user journeys and functionalities tested:
-
-
 
 User Authentication Flow:
 
@@ -264,8 +258,6 @@ To execute the full suite of automated tests, both the frontend and backend appl
 
 Project Structure Overview:
 
-
-
 Your project structure is assumed to be as follows, with a main root directory containing three sub-directories:
 
 
@@ -280,11 +272,7 @@ your-main-project-folder/
 
 
 
-
-
 Prerequisites (Run in separate terminal sessions):
-
-
 
 Start Frontend Application:
 
@@ -351,8 +339,6 @@ Ensure ChromeDriver (or the appropriate WebDriver for your target browser) is in
 
 
 Execution Steps (Run in new terminal sessions):
-
-
 
 Run Backend API Tests:
 
